@@ -1,0 +1,58 @@
+SYSTEM DESIGN
+
+step 1 -- functional/ non functional requirements
+
+1. Functional requiermentts - features. ex - youtube design - watch video, upload video etc.
+2. Non functional Requirements - How the system behaves? -- performance, scalabiliy, availability, maintainence, security etc.
+
+step 2 -- capacity estimation
+
+DAU/MAU -- daily active users & monthly active users.
+throughput -- number of requests needs to be processed in per unit time . ex - 1 million request per second
+storage/memory - storage/memory required.
+network bandwidth -- how much data can travel in a network in bits/seconds. example 2Mbps, 3 Kbps etc.
+
+step 3 -- API design
+
+endpoints 
+request
+response
+
+step4 -- high level design
+
+step 5 -- deep dive
+
+-- db selection
+-- data modelling
+-- caches etc.
+
+Buzz words in system design
+
+Design goals -- Design goals means the ideas that make great systems. It makes our system work well
+
+Scalability --
+
+example -- suppose I have started a bakery shop , with one billing counter. Now it becomes famous and more people starting coming to my shop. It makes load to my billing counter as people are waiting for their chance. that means it increases the latency which affects my shop. Now I opened 2 more billing counter. now people have to wait for the short period of time. that means I scale my system.
+
+definition -- scalability is the ability of the system to handle the load (more requests, data , users etc) without degrading the performance.
+
+
+Availability -- Avilability means how much time the system is up or running? -- if we say we have 99.999 % (five nines) availability then that means a system has a down time of only 5 minutes in year.
+
+
+
+Consistency -- Everybody sees the same data at the same time
+
+- strong consistency - strong consistency means when data is inserted or updated, evrybody sees the same data at the same time.(delay)
+- eventual consistency - eventual consistency - eventual consistency means data will become consistent over time but not immediately (no delay)
+
+strong consistency - bank balance update
+eventual consistency - instagram post 
+
+
+Fault tolerance - There should not be single point of failure i.e if a component fails the entire application goes down
+
+example -- there is bridge on the single pillar & if that pillar goes down the entire, bridge goes down.
+
+solution -- redundancy (adding more servers)
+
