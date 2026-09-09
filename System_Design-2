@@ -1,0 +1,42 @@
+System Design - class 2
+
+IP Address - Internet protocol address is the unique label assigned to each device on the internet which uses protocol to communicate to each other
+
+
+IPV4 and IPV6 is the standard to assign the ip address.
+
+IPV4 - 192.168.1.1
+IPV6- 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+DNS - DNS stands for the domain name server. Its not worth on the internet to remember the ip address of each computer or server. So DNS server comes into picture
+which is like a phone directory. For example on the browser if we type www.google.com, the request first goes to the DNS server then it returs the ip address of the google server
+for example - if you try this ip address - 142.250.190.238, you will reach to google.com --> but remembering ip addresses of each server or device on internet is not so good.
+
+CLIENT & SERVER
+
+client - Device request for information.
+server - Computer or System that serves the request.
+
+
+Protocol - Protocol are the rules that different systems used on the internet to communicate with each other. ex - http, ftp, tcp, udp etc.
+
+HTTP - HyperText transfer Protocol - web interactions (browser calling a website, rest apis communication).
+
+FTP - File Transfer Protocol - Transferring File over a network.
+
+TCP - Transmission Control Protocol - Its a protocol that is used for video streaming. It deliver the data packets very fast, and in order.
+example - watching a video from youtube, where ordering of the datapackets is necessary.
+
+UDP - stands for User Datagram Protocol. It's a protocol that is mainly used for live streaming in which if some datapackets are lost, it does not matter. It sends the datapackets very fast and application does it ordering by timestamp. It directly sends data packets to target device without handshaking or connection.For example Watsapp video and audio calls.
+
+Websockets - Websockets provide the 2 way communication from client to server. It is mainly used for messaging apps. Instead of everytime a client says to server, do you have a message. Instead server says I have a message for you.
+
+
+FORWARD VS REVERSE PROXY
+
+Forward proxy means we have a assistant server sits between the client and main server which controls the outbound request of the client to the main server or internet.
+Example sometimes we see we open a endpoint in our company laptop which is getting blocked. That might be due to the forward proxy server setup.
+
+Reverse Proxy - Controls the inbound traffic to our servers just like api gateway. Used for call blocking, rate limiting, logging, authentication , authorization etc.
+
+
