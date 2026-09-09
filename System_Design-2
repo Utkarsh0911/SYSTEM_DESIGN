@@ -40,4 +40,3 @@ Example sometimes we see we open a endpoint in our company laptop which is getti
 Reverse Proxy - Controls the inbound traffic to our servers just like api gateway. Used for call blocking, rate limiting, logging, authentication , authorization etc.
 
 
-learning git comands
